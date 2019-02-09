@@ -9,7 +9,7 @@ inputs:
  - name: create-some-files
 
 outputs:
- -name: get-some-files
+ - name: get-some-files
 
 run:
  path: sh

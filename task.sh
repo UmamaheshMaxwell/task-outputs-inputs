@@ -6,7 +6,7 @@ echo "Concourse API target ${fly_target}"
 echo "Tutorial $(basename $DIR)"
 
 pushd "$DIR"
-  fly -t ${fly_target} set-pipeline -p tutorial-pipeline -c pipeline.yml -n
+  fly -t ${fly_target} set-pipeline -p tutorial-pipeline -c ci/pipeline/pipeline.yml -n
   fly -t ${fly_target} unpause-pipeline -p tutorial-pipeline
-  fly -t ${fly_target} trigger-job -w -j tutorial-pipeline/job-pass-files
+  fly -t ${fly_target} trigger-job -w -j tutorial-pipeline/job-create-files
 popd

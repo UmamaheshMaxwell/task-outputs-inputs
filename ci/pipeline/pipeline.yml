@@ -1,8 +1,9 @@
 resources:
 - name: pass-output
   type: git
-  uri: https://github.com/UmamaheshMaxwell/task-outputs-inputs.git
-  branch: master
+  source:
+    uri: https://github.com/UmamaheshMaxwell/task-outputs-inputs.git
+    branch: master
 
 jobs:
  - name: job-create-files
