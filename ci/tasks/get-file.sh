@@ -2,8 +2,7 @@
 
 ls -la some-files
 
-cd some-files
-node file1.js
-node file2.js
-node file3.js
-node.file4.js
+node some-files/file1.js
+node some-files/file2.js
+node some-files/file3.js
+node some-files/file4.js
