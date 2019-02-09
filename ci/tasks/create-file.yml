@@ -6,12 +6,11 @@ image_resource:
     source: { repository: busybox }
 
 inputs:
- - name: create-some-files
-   path: create-some-files
+ - name: pass-output
 
 outputs:
  - name: get-some-files
 
 run:
  path: sh
- args: [create-some-files/ci/tasks/create-file.sh]
+ args: [pass-output/ci/tasks/create-file.sh]

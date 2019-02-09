@@ -5,9 +5,9 @@ image_resource:
     source: { repository: node, tag: slim}
 
 inputs:
- #- name: create-some-files
+ - name: pass-output
  - name: get-some-files
 
 run: 
  path: sh
- args: [get-some-files/ci/tasks/get-file.sh]
+ args: [pass-output/ci/tasks/get-file.sh]

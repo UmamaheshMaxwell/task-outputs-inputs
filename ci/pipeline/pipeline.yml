@@ -12,23 +12,8 @@ jobs:
     - get: pass-output
     
     - task: create-files
-      config:
-        platform: linux
-
-        image_resource:
-            type: docker-image
-            source: { repository: busybox }
-
-        inputs:
-        - name: pass-output
-          path: pass-output
-
-        outputs:
-        - name: get-some-files
-
-        run:
-         path: sh
-         args: [pass-output/ci/tasks/create-file.sh]
+      file: pass-output/ci/tasks/create-file.yml
+ 
      
     - task: get-files
       file: pass-output/ci/tasks/get-file.yml
