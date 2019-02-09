@@ -1,0 +1,17 @@
+resources:
+- name: pass-output
+  type: git
+  uri: https://github.com/UmamaheshMaxwell/task-outputs-inputs.git
+  branch: master
+
+jobs:
+ - name: job-create-files
+   public: true
+   plan:
+    - get: pass-output
+    
+    - task: create-files
+      file: pass-output/ci/tasks/create-file.yml
+     
+    - task: get-files
+      file: pass-output/ci/tasks/get-file.yml
