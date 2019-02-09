@@ -6,7 +6,7 @@ image_resource:
 
 inputs:
  - name: pass-output
- - name: get-some-files
+ - name: some-files
 
 run: 
  path: sh

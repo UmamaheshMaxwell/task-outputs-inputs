@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ls -la some-files/
+ls -la some-files
 
 cd some-files
 node file1.js
