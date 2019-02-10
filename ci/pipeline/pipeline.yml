@@ -13,7 +13,6 @@ jobs:
     
     - task: create-files
       file: pass-output/ci/tasks/create-file.yml
- 
-     
+      
     - task: get-files
       file: pass-output/ci/tasks/get-file.yml
